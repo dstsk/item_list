@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infotecs (Test)</title>
+    <link rel="icon" type="image/png" href="img/sort-icon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="settings">
+        <div class="amount">
+          <div class="amount__title">show:</div>
+          <select class="amount__select" name="sort-by" autocomplete="off">
+            <option value="1">1 item</option>
+            <option value="5">5 items</option>
+            <option value="10" selected="selected">10 items</option>
+            <option value="20">20 items</option>
+            <option value="30">30 items</option>
+            <option value="50">50 items</option>
+            <option value="75">75 items</option>
+            <option value="100">100 items</option>
+          </select>
+          <button class="settings__btn reset-btn">reset</button>
+        </div>
+        <div class="sort">
+          <div class="sort__title">sort by:</div>
+          <div class="sort__by-title">
+            <button
+              class="settings__btn sort__by-title-btn sort__btn"
+              data-parameter="title"
+            >
+              name
+            </button>
+          </div>
+          <div class="sort__by-price">
+            <button
+              class="settings__btn sort__by-price-btn sort__btn"
+              data-parameter="price"
+            >
+              price
+            </button>
+          </div>
+        </div>
+      </header>
+      <ul class="list"></ul>
+    </div>
+    <script src="js/controller.js" type="module"></script>
+  </body>
+</html>
